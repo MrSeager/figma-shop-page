@@ -1,0 +1,13 @@
+/*Background*/
+.cs-bg-navbar {
+    background-color: #ffc700 !important;
+}
+
+@media (max-width: 991px) {
+    .cs-nav-collapse {
+        position: absolute;
+        width: 100% !important;
+        left: 0 !important;
+        top: 50px !important;
+    }
+}
