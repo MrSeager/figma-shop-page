@@ -1,38 +1,31 @@
 import { FC } from 'react';
 //Components
 import './figmaStyle.css';
+import FigmaNavBar from './FigmaNavBar.tsx';
+import DraggableScroll from './DraggableScroll.tsx';
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
-import { Container, Button, Navbar, Nav, Form } from 'react-bootstrap';
+import { Container, Image } from 'react-bootstrap';
 //Spring
 import { useSpring, animated } from '@react-spring/web';
-//Icons
-import { IoSearch } from "react-icons/io5";
-import { SlUser } from "react-icons/sl";
+//Images
+import ImgOne from '../images/pexels-elijahsad-3894557.jpg';
+import ImgTwo from '../images/pexels-lukebarky-2885916.jpg';
+import ImgThree from '../images/pexels-mwabonje-1820559.jpg';
+import ImgFour from '../images/pexels-pixabay-157920.jpg';
+import ImgFive from '../images/pexels-salomonjr10-3881965.jpg';
 
 const FigmaShopPage: FC = () => {
     return (
         <Container fluid className='min-vh-100 px-0 pt-5'>
-            <Navbar fixed='top' expand='lg' className='cs-bg-navbar'>
-                <Container fluid className='position-relevant'>
-                    <div className='d-flex flex-row gap-3'>
-                        <Navbar.Toggle aria-controls='basic-navbar-nav' />
-                        <Navbar.Collapse className='flex-grow-0 cs-nav-collapse'>
-                            <Nav className='gap-3'>
-                                <Nav.Link className='text-black border border-2 border-black rounded-pill text-uppercase px-4'>Shop</Nav.Link>
-                                <Nav.Link className='text-black border border-2 border-black rounded-pill text-uppercase px-4'>About</Nav.Link>
-                            </Nav>
-                        </Navbar.Collapse>
-                        <Button className='cs-justify-self-start border-0 bg-transparent text-black'><IoSearch /></Button>
-                    </div>
-                    <Navbar.Brand href='#' className='text-center text-uppercase'>The Figma Store</Navbar.Brand>
-                    <Nav className='d-flex flex-row'>
-                        <Nav.Link><SlUser /></Nav.Link>
-                        <Nav.Link className='text-black border border-2 border-black rounded-pill text-uppercase px-4'>Cart 0</Nav.Link>
-                    </Nav>
-                </Container>
-            </Navbar>
-            Hi
+            <FigmaNavBar />
+            <Container fluid className="cs-bg-navbar overflow-auto d-flex flex-row gap-2 px-0 py-3">
+                <Image fluid src={ImgOne} alt='image' className='cs-img-size rounded-circle user-select-none' />
+                <Image fluid src={ImgTwo} alt='image' className='cs-img-size cs-clip-one user-select-none' />
+                <Image fluid src={ImgThree} alt='image' className='cs-img-size cs-clip-two user-select-none' />
+                <Image fluid src={ImgFour} alt='image' className='cs-img-size' />
+                <Image fluid src={ImgFive} alt='image' className='cs-img-size' />
+            </Container>
         </Container>
     );
 }
