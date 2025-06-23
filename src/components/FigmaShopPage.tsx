@@ -2,7 +2,6 @@ import { FC } from 'react';
 //Components
 import './figmaStyle.css';
 import FigmaNavBar from './FigmaNavBar.tsx';
-import DraggableScroll from './DraggableScroll.tsx';
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container, Image } from 'react-bootstrap';
