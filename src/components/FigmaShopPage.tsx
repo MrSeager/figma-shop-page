@@ -22,13 +22,19 @@ interface itemsProps {
 const FigmaShopPage: FC = () => {
     const [items, setItems] = useState<itemsProps[]>([]);
 
-    
+    useEffect(() => {
+        axios.get('https://raw.githubusercontent.com/MrSeager/figma-shop-page/refs/heads/main/src/data.json').then((response) => {
+          setItems(response.data.items);
+        });
+    }, []);
 
     return (
         <Container fluid className='min-vh-100 px-0 pt-5'>
             <FigmaNavBar />
             <SectionOne />
-            <SectionTwo />
+            <SectionTwo
+                items={items}
+            />
         </Container>
     );
 }
