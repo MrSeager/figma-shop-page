@@ -7,7 +7,7 @@ import { SlUser } from "react-icons/sl";
 
 const FigmaNavBar: FC = () => {
     return (
-        <Navbar fixed='top' expand='lg' className='cs-bg-navbar'>
+        <Navbar fixed='top' expand='lg' className='cs-bg-navbar cs-w mx-auto'>
             <Container fluid className='position-relevant'>
                 <div className='d-flex flex-row gap-3'>
                     <Navbar.Toggle aria-controls='basic-navbar-nav' />

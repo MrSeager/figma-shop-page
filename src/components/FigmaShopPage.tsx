@@ -4,6 +4,7 @@ import './figmaStyle.css';
 import FigmaNavBar from './FigmaNavBar.tsx';
 import SectionOne from './SectionOne.tsx';
 import SectionTwo from './SectionTwo.tsx';
+import FooterSection from './FooterSection.tsx';
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container } from 'react-bootstrap';
@@ -29,12 +30,13 @@ const FigmaShopPage: FC = () => {
     }, []);
 
     return (
-        <Container fluid className='min-vh-100 px-0 pt-5'>
+        <Container fluid className='min-vh-100 px-0 pt-5 cs-w shadow'>
             <FigmaNavBar />
             <SectionOne />
             <SectionTwo
                 items={items}
             />
+            <FooterSection />
         </Container>
     );
 }

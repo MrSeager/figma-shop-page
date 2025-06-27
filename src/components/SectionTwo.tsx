@@ -24,12 +24,12 @@ interface SectionTwoProps {
 const SectionTwo: FC<SectionTwoProps> = ({ items }) => {
     return (
         <Container fluid className='mt-5 pt-5 d-flex flex-column align-items-center'>
-            <h1 className='w-50 text-center text-uppercase text-secondary my-5'>Figma's<GiFlake className='text-primary mx-2' />collection  
+            <h1 className='cs-w-h text-center text-uppercase text-secondary my-5'>Figma's<GiFlake className='text-primary mx-2' />collection  
             <RiHourglass2Line className='text-danger mx-2' />of <span className='text-black text-decoration-underline'>layers</span>
             <LuOption className='text-danger mx-2' />and<GiChaingun className='text-success mx-2' />
             components<LuSun className='text-warning mx-2' />for you<GrAttachment className='text-primary mx-2' />
             and<CgShapeZigzag className='text-warning mx-2' />your friends<PiTriangleDashedFill className='text-success mx-2' /></h1>
-            <Row className='mt-5'>
+            <Row className='mt-5 mx-lg-5 mx-0'>
                 {items.length > 0 ? (
                     items.map((item, index) => (
                         <Col lg={3} md={4} sm={6} xs={12}>
