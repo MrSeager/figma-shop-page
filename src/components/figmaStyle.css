@@ -2,16 +2,19 @@
     max-width: 1920px !important;
 }
 
-.cs-w-2 {
-    width: 50000px !important;
-}
-
 .cs-w-h {
-    width: 70% !important;
+    width: 60% !important;
 }
 
 .cs-transition {
     transition: .5s !important;
+}
+
+.cs-badge {
+    width: 150px !important;
+    height: 150px !important;
+    top: -7% !important;
+    right: 10% !important;
 }
 
 /*Background*/
