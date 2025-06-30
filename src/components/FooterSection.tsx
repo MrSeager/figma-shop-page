@@ -10,7 +10,7 @@ import { FaCircleArrowUp } from "react-icons/fa6";
 
 const FooterSection: FC = () => {
     return (
-        <Container fluid className='cs-bg-navbar px-5 py-5'>
+        <Container fluid className='cs-bg-main px-5 py-5'>
             <Row className='mx-5 px-5'>
                 <Col xs={3}>
                     Logo or smth

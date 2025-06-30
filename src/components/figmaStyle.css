@@ -13,12 +13,39 @@
 .cs-badge {
     width: 150px !important;
     height: 150px !important;
-    top: -7% !important;
+    top: -4% !important;
     right: 10% !important;
+}
+
+/*Icon*/
+.cs-badge svg {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.animated-hands-container {
+    z-index: 2;
+}
+
+.cs-hand-left {
+    filter: brightness(0) saturate(100%) invert(61%) sepia(97%) saturate(730%) hue-rotate(1deg) brightness(112%) contrast(102%) !important;
+}
+
+.cs-hand-right {
+    transform: scaleX(-1);
+    filter: brightness(0) saturate(100%) invert(83%) sepia(33%) saturate(4977%) hue-rotate(215deg) brightness(95%) contrast(111%) !important;
 }
 
 /*Background*/
 .cs-bg-navbar {
+    background-color: #ffc80090 !important;
+}
+
+.cs-bg-navbar-second {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.cs-bg-main {
     background-color: #ffc700 !important;
 }
 

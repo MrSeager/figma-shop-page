@@ -21,7 +21,7 @@ const SectionOne: FC = () => {
         <Container
             fluid
             ref={ref}
-            className='gap-4 cs-bg-navbar py-3 user-select-none border-bottom border-4 border-black'
+            className='gap-4 cs-bg-main py-3 user-select-none border-bottom border-4 border-black'
             {...events}
             style={{
                 display: "flex",

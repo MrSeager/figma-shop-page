@@ -30,7 +30,7 @@ const FigmaShopPage: FC = () => {
     }, []);
 
     return (
-        <Container fluid className='min-vh-100 px-0 pt-5 cs-w shadow'>
+        <Container fluid className='cs-bg-main min-vh-100 px-0 pt-5 cs-w shadow'>
             <FigmaNavBar />
             <SectionOne />
             <SectionTwo

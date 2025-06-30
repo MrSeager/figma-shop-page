@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useState, useEffect } from 'react';
 //Bootstrap
 import { Container, Button, Navbar, Nav, Form } from 'react-bootstrap';
 //Icons
@@ -6,8 +6,19 @@ import { IoSearch } from "react-icons/io5";
 import { SlUser } from "react-icons/sl";
 
 const FigmaNavBar: FC = () => {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const onScroll = () => {
+        setScrolled(window.scrollY > 50); // change threshold as needed
+        };
+
+        window.addEventListener('scroll', onScroll);
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
     return (
-        <Navbar fixed='top' expand='lg' className='cs-bg-navbar cs-w mx-auto'>
+        <Navbar fixed='top' expand='lg' className={`${scrolled ? 'cs-bg-navbar-second' : 'cs-bg-navbar'} cs-transition cs-w mx-auto`}>
             <Container fluid className='position-relevant'>
                 <div className='d-flex flex-row gap-3'>
                     <Navbar.Toggle aria-controls='basic-navbar-nav' />
