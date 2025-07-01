@@ -16,12 +16,16 @@ export const useRotation = (duration: number = 8000) =>
 
 export const useFirstHandStyle = ( hovered: boolean ) =>
     useSpring({
-        transform: hovered ? 'translateX(-10%)' : 'translateX(0%)',
+        transform: hovered 
+            ? 'translate(-10%, 3%) rotate(-15deg)' 
+            : 'translate(0%, 0%) rotate(0deg)',
         opacity: 1,
     });
 
 export const useSecondHandStyle = ( hovered: boolean ) => 
     useSpring({
-        transform: hovered ? 'translateX(10%)' : 'translateX(50%)',
+        transform: hovered 
+            ? 'translate(15%, 5%) rotate(15deg)' 
+            : 'translate(50%, 30%) rotate(35deg)',
         opacity: hovered ? 1 : 0,
     });
