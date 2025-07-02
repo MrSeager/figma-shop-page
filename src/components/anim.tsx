@@ -6,6 +6,12 @@ export const useHover = ( hover: boolean, scl: number ) =>
         config: { tension: 110, friction: 10 },
     });
 
+export const useHoverCard = ( hover: boolean ) => 
+    useSpring({
+        opacity: hover ? 1 : 0,
+        config: { tension: 110, friction: 10 },
+    });
+
 export const useRotation = (duration: number = 8000) =>
     useSpring({
         from: { rotate: 0 },

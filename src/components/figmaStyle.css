@@ -92,6 +92,14 @@
     scale: 1.2 !important;
 }
 
+.cs-hover {
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    background-color: rgba(255, 255, 255, 0.75) !important;
+}
+
 @media (max-width: 991px) {
     .cs-nav-collapse {
         position: absolute;
