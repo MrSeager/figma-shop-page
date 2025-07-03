@@ -49,6 +49,10 @@
     background-color: #ffc700 !important;
 }
 
+.cs-bg-logo {
+    background-color: rgb(198, 136, 243) !important;
+}
+
 /*Clip frames*/
 .cs-clip-one {
     clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
@@ -98,6 +102,41 @@
     bottom: 0 !important;
     right: 0 !important;
     background-color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/*Font*/
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg); /* Optional: depends on desired direction */
+  text-align: center;
+}
+
+/*Running string*/
+.ticker-container {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+}
+
+.ticker-track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.ticker-track span {
+  display: inline-block;
+  padding-right: 2rem;
 }
 
 @media (max-width: 991px) {
