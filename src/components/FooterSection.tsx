@@ -49,14 +49,14 @@ const FooterSection: FC = () => {
                     </Col>
                 </Col>
                 <Col as={Row} lg={9} xs={12}>
-                    <Col xs={8}>
-                        <h2 className='fw-bold text-uppercase'>Objects<br /> that inspire.</h2>
+                    <Col lg={8} xs={12} className='my-lg-0 my-3'>
+                        <h2 className='fw-bold text-uppercase text-lg-start text-center'>Objects<br /> that inspire.</h2>
                     </Col>
-                    <Col as={Nav} xs={4} className='d-flex flex-column align-items-start justify-content-start'>
+                    <Col as={Nav} lg={4} xs={12} className='d-flex flex-lg-column flex-row align-items-start justify-content-lg-start justify-content-center'>
                         <Nav.Link className='cs-nb-btn cs-transition text-black'>Privecy & Terms</Nav.Link>
                         <Nav.Link className='cs-nb-btn cs-transition text-black'>Contact Us</Nav.Link>
                     </Col>
-                    <Col as={Nav} xs={12} className='fs-4 justify-content-lg-between justify-content-center pt-5'>
+                    <Col as={Nav} xs={12} className='fs-4 justify-content-lg-start justify-content-center pt-5'>
                         <Nav.Link className='cs-nb-btn cs-transition text-uppercase text-black'>Figma <ImArrowUpRight2 /></Nav.Link>
                         <Nav.Link className='cs-nb-btn cs-transition text-uppercase text-black'>Twitter</Nav.Link>
                         <Nav.Link className='cs-nb-btn cs-transition text-uppercase text-black'>Instagram</Nav.Link>

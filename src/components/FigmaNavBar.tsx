@@ -23,20 +23,20 @@ const FigmaNavBar: FC = () => {
             {searchBar ?
                 <Form.Control type="string" placeholder="Search" className='rounded-0 border-top-0 border-end-0 border-start-0 px-5 py-3 fs-4 shadow-none border-3 border-black' />
             : ''}
-            <Container fluid className='w-100 mt-2'>
+            <Container fluid className='px-lg-3 px-1 w-100 mt-2 d-flex flex-row justify-content-between flex-nowrap'>
                 <div className='d-flex flex-row gap-3'>
                     <Navbar.Toggle aria-controls='basic-navbar-nav' className='border-3 border-black'><GiHamburgerMenu className='text-black' /></Navbar.Toggle>
                     <Navbar.Collapse className={`${scrolled ? 'cs-bg-navbar-second' : 'cs-bg-navbar'} cs-transition flex-grow-0 cs-nav-collapse`}>
-                        <Nav className='gap-3 flex-row px-3'>
+                        <Nav className='gap-3 flex-row'>
                             <Nav.Link className='fw-bold cs-nb-btn cs-transition text-black border border-2 border-black rounded-pill text-uppercase px-4'>Shop</Nav.Link>
                             <Nav.Link className='fw-bold cs-nb-btn cs-transition text-black border border-2 border-black rounded-pill text-uppercase px-4'>About</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                     <Button onClick={() => setSearchBar(prev => !prev)} className='cs-nb-btn cs-transition cs-justify-self-start border-0 bg-transparent text-black'><FaSearch /></Button>
                 </div>
-                <Navbar.Brand href='#' className='cs-nb-btn cs-transition fw-bold text-center text-uppercase'>The Figma Store</Navbar.Brand>
-                <Nav className='d-flex flex-row gap-3'>
-                    <Nav.Link className='cs-nb-btn cs-transition'><FaRegUser /></Nav.Link>
+                <Navbar.Brand href='#' className='cs-nb-btn cs-transition fw-bold text-center text-uppercase cs-fs'>The Figma Store</Navbar.Brand>
+                <Nav className='d-flex flex-row align-items-center gap-3'>
+                    <Nav.Link className='cs-nb-btn text-black cs-transition'><FaRegUser /></Nav.Link>
                     <Nav.Link className='fw-bold cs-nb-btn cs-transition text-black border border-2 border-black rounded-pill text-uppercase px-4'>Cart 0</Nav.Link>
                 </Nav>
             </Container>
