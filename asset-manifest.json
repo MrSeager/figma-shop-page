@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/figma-shop-page/static/css/main.55819f32.css",
+    "main.css": "/figma-shop-page/static/css/main.4ede7678.css",
     "main.js": "/figma-shop-page/static/js/main.64495514.js",
     "static/js/453.fbb57a41.chunk.js": "/figma-shop-page/static/js/453.fbb57a41.chunk.js",
     "static/media/pexels-salomonjr10-3881965.jpg": "/figma-shop-page/static/media/pexels-salomonjr10-3881965.6d79673672b5d8964e44.jpg",
@@ -10,12 +10,12 @@
     "static/media/pexels-mwabonje-1820559.jpg": "/figma-shop-page/static/media/pexels-mwabonje-1820559.45db9640c02d08be72ff.jpg",
     "static/media/hand-gesture.svg": "/figma-shop-page/static/media/hand-gesture.26c93dbdf6e50a561b61254230dc30a8.svg",
     "index.html": "/figma-shop-page/index.html",
-    "main.55819f32.css.map": "/figma-shop-page/static/css/main.55819f32.css.map",
+    "main.4ede7678.css.map": "/figma-shop-page/static/css/main.4ede7678.css.map",
     "main.64495514.js.map": "/figma-shop-page/static/js/main.64495514.js.map",
     "453.fbb57a41.chunk.js.map": "/figma-shop-page/static/js/453.fbb57a41.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55819f32.css",
+    "static/css/main.4ede7678.css",
     "static/js/main.64495514.js"
   ]
 }
