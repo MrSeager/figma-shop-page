@@ -13,7 +13,7 @@
 .cs-badge {
     width: 150px !important;
     height: 150px !important;
-    top: -4% !important;
+    top: -75px !important;
     right: 10% !important;
 }
 
@@ -61,7 +61,6 @@
 
 .cs-clip-two {
     clip-path: polygon(0 35%, 20% 25%, 0 0, 100% 0, 80% 25%, 100% 35%, 100% 68%, 80% 75%, 100% 100%, 0 100%, 20% 75%, 0 65%);
-
 }
 
 /*Images*/
