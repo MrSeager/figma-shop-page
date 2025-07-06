@@ -34,10 +34,10 @@ const FigmaNavBar: FC = () => {
                     </Navbar.Collapse>
                     <Button onClick={() => setSearchBar(prev => !prev)} className='cs-nb-btn cs-transition cs-justify-self-start border-0 bg-transparent text-black'><FaSearch /></Button>
                 </div>
-                <Navbar.Brand href='#' className='cs-nb-btn cs-transition fw-bold text-center text-uppercase cs-fs'>The Figma Store</Navbar.Brand>
+                <Navbar.Brand href='#' className='cs-nb-btn cs-transition fw-bold text-center text-uppercase text-wrap '>The Figma Store</Navbar.Brand>
                 <Nav className='d-flex flex-row align-items-center gap-3'>
                     <Nav.Link className='cs-nb-btn text-black cs-transition'><FaRegUser /></Nav.Link>
-                    <Nav.Link className='fw-bold cs-nb-btn cs-transition text-black border border-2 border-black rounded-pill text-uppercase px-4'>Cart 0</Nav.Link>
+                    <Nav.Link className='fw-bold cs-nb-btn cs-transition text-black border border-2 border-black rounded-pill text-uppercase text-nowrap px-4'>Cart 0</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>

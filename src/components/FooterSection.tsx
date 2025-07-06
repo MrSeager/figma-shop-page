@@ -36,7 +36,7 @@ const FooterSection: FC = () => {
     return (
         <Container fluid className='cs-bg-main px-0 pt-5'>
             <Row className='mx-md-5 mx-1 fw-bold w-100 m-0 px-0'>
-                <Col as={Row} lg={3} xs={12} className='text-uppercase px-5'>
+                <Col as={Row} lg={3} xs={12} className='mx-0 text-uppercase px-5'>
                     <Col xs={5} className='cs-bg-logo d-flex flex-column align-items-center justify-content-center p-0'>
                         <h2 className='my-3'>The</h2>
                     </Col>
@@ -48,7 +48,7 @@ const FooterSection: FC = () => {
                         <h2 className='mb-3'>Store</h2>
                     </Col>
                 </Col>
-                <Col as={Row} lg={9} xs={12}>
+                <Col as={Row} lg={9} xs={12} className='mx-0'>
                     <Col lg={8} xs={12} className='my-lg-0 my-3'>
                         <h2 className='fw-bold text-uppercase text-lg-start text-center'>Objects<br /> that inspire.</h2>
                     </Col>
